@@ -1,0 +1,94 @@
+What is the difference between assertion and verification?
+Assertion means hard assertion. Verification means soft assertion. Verification is similar to if else statement.
+If hard assertion fails, rest of the test case stops.
+What is the difference between soft assert and hard assert?
+Hard assertion stops execution, after assertion failure. Soft assert continues to execute even after failure
+We need to create a soft assert object to do soft assertion
+assertAll() need to be used in soft assert to make the actual result
+Which assertion do you prefer? Why?
+I used both. Both assertion are useful. But I used hard assertion the most, because I need to fix the issue the moment it shows up. It usually doesn’t make sense to wait for other tests if there is a failure.
+If there are  lots of test cases , I prefer to use hard assert to find the wrong test case quickly to fix it.
+If I use soft assertion, It will run all the tests every time even there are wrong cases in them. I usually use soft assertion when I write new test cases to see if all good or some fails.
+
+
+ I know Core Java
+    Data structures(Collections and Maps)
+    String manipulations
+    OOP Concepts
+    Exceptions
+    Functional programming
+    OOP
+    Inheritance
+    Abstration
+    Encapsulation
+    Polymorphism
+    //reference               Object
+    WebDriver driver = new ChromeDriver();
+    //Abstraction
+    //Inheritance
+    //Polymorphism
+    When we use WebDriver
+    we have inheritance, abstraction and polymorphism as webdriver is an Interface
+    Clothes of elder brother fit to younger brother
+    Inheritance , Abstraction, Polymorphism
+    Encapsulation
+    I use pojo class and ObjectMapper for deserialization and I use encapsulated variables and methods to set the data and get the data from pojo classes
+    When I use pojo, I deserialize the Json object to Java class so I use encapsulation
+    Abstract class and Interface
+    Interface has multiple inheritance, but Abstract class does not
+    Interface has fully abstraction, but Abstract class has patial.
+    Interface can have no constructors, but Abstract class can also have constructors
+    try catch vs throws exception
+    public void a(){
+        try {
+        }catch(){
+        }
+    }
+    public void b()throws Exception{
+
+    }
+    main(){
+    a();
+    }
+    When we use try catch block, we implement it in utilities not to handle one more time.
+    When we use throws Exception, we use it in test classes just for once as no need to handle it again and again.
+    xpath: Absolute xpath and relative Xpath
+    We use relative xpath for parent child relationship to make items more dynamic
+    / / / / / / / / / / /  /  / /
+    Selenium cannot handle windows based pop ups, but we can handle them using Robot class
+    We use Alert just for web based pop-ups
+    Maven is a built tool!
+    we use dependencies with maven to provide third party libraries and use them for data manipulation
+    we also use plugins to manage the framework with remote and local executions.
+    Page Object model design:
+    It is used as a design pattern.
+    It is used for more reusable, readable, maintainable and organized frameworks.
+    All test items and pages elements would be typed in a structured design.
+    It makes framework faster and more dynamic
+    Easy to debug
+    End point:
+    base url + path parameters + query parameters
+    Get   => Read
+    Post  => Create
+    Put   => Update
+    Patch => Update partailly
+    Delete=> Remove
+    Authentication vs Autorization
+    Authentication is a general access
+    Authorization is a specific access about roles
+    Serialization => Java to JSON
+    deserialization => JSON to JAVA
+    how do you do validations in api?
+    Assertions.
+    status code validation
+    HemchrestMatchers
+    To
+    equalTo
+    hasItem
+    HasItems
+    hasSize
+    You have limited data, how would you test them with API?
+    JsonIgnoreProperties..
+    1 exception in API?
+    Type casting
+    Mismatch exception
