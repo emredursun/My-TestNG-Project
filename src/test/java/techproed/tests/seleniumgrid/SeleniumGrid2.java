@@ -1,11 +1,11 @@
 package techproed.tests.seleniumgrid;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 

@@ -1,4 +1,5 @@
 package techproed.tests.dataprovider;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
@@ -9,6 +10,7 @@ import techproed.pages.LoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
+
 import java.io.IOException;
 public class Day18_DataProvider2 {
     @DataProvider(name = "customer-login-data")

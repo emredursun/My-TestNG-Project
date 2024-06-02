@@ -19,7 +19,7 @@ public class AmazonSignInTest {
         amazonSignInPage.continueButton.click();
 //        Assert "There was a problem"  message
         String warningMessageText = amazonSignInPage.warningMessage.getText();
-        Assert.assertEquals(warningMessageText,"There was a problem");
+        Assert.assertEquals(warningMessageText,"Er heeft zich een probleem voorgedaan.");
 //        Click on "Need help?"
         amazonSignInPage.needHelp.click();
 //        Click on "Forgot your Password?"
@@ -33,6 +33,7 @@ public class AmazonSignInTest {
         amazonSignInPage.createAccountButton.click();
 //        Verify the text "Create account"
         String createAccountText =  amazonSignInPage.createAccountText.getText();
-        Assert.assertEquals(createAccountText,"Create account");
+        Assert.assertEquals(createAccountText,"Account aanmaken");
+        Driver.closeDriver();
     }
 }
